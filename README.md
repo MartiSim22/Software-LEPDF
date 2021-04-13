@@ -6,38 +6,38 @@ Autore : Martina Simonetti
 Data : 13/04/2021
 
 
-##Sommario
+## Sommario
 
-Introduzione
-Audience
-Requisiti di sistema
-Descrizione del software
-3.1 Obiettivo
-3.2 Componenti
-3.3 Licenza
-Per iniziare
-4.1 Installazione
-4.2 Esecuzione del software
-
-
+### Introduzione
+### Audience
+### Requisiti di sistema
+### Descrizione del software:
+- 3.1 Obiettivo
+- 3.2 Componenti
+- 3.3 Licenza
+### Per iniziare
+- 4.1 Installazione
+- 4.2 Esecuzione del software
 
 
-Abstract
+
+
+## Abstract
 Il software consente di ricevere in input uno o più documenti in formato PDF e ricevere in output un unico documento CSV. Il documento CSV di output è composto da una singola tabella con al suo interno tutti i valori legati ad un argomento scelto presente in tutti i documenti che vengono inseriti in input. Inoltre, l’utente può scegliere quali pagine del documento,quali tabelle , righe o colonne da analizzare, per essere sicuro di ricevere in output solamente i valori di interesse.
 
-Introduzione
+## Introduzione
 Il software nasce dall’idea di analizzare i cambiamenti inerenti ad alcuni campi del settore automobilistico durante il periodo della pandemia da COVID-19. Il primo passo è stato quello di ricavare i dati relativi all’immatricolazione di autoveicoli dal sito UNRAE e , dopo aver notato che la maggioranza dei dati forniti dal sito era racchiusa in documenti PDF, è nata l’idea di creare un programma che prenda in input tali file, uno per ogni data : ogni documento contiene delle righe rappresentanti le provincie italiane e delle colonne per diverse marche d’auto. Il risultato è un unico file CSV che mostra l’andamento dell’immatricolazione di autoveicoli per mese nel corso degli anni 2018-2021.
 
-Audience
+## Audience
 L’utente dovrà apportare delle modifiche per rendere il programma idoneo ai propri fini, quindi sono opportune delle conoscenze pregresse del linguaggio di programmazione Python. Il software è consigliato a chiunque voglia effettuare un’analisi approfondita di un grande numero di documenti PDF trasformandoli in un unico file CSV. 
 
 
-Descrizione del software
-4.1 Obiettivo
+## Descrizione del software
+### 4.1 Obiettivo
 Il software LEPDF consente all’utente di leggere dei file con estensione PDF, organizzati per data, ed estrarre da essi degli argomenti selezionati relativi ad uno o più brand, che verranno proposti in output in un unico file di tipo CSV. Per brand si intende una singola riga del file in input, mentre per argomento si intende la singola colonna del file in input.
 
 
-4.2 Componenti
+### 4.2 Componenti
 Il software LEPDF è composto e da due moduli, organizzati in un unico notebook jupyter:
 
 -Il modulo di Configurazione permette all’utente di personalizzare il software in modo da estrarre correttamente le informazioni dai propri file in input. Esso è formato da sei parti: la funzione configurazione(), che consente di associare determinati parametri ai documenti che sono riconosciuti dal programma grazie alla nomenclatura assegnatagli dall’utente, le variabili personalizzabili ‘colonna’ e ‘riga’;l’array colname che contiene le ridenominazioni delle colonne i cui nomi sono stati estratti in maniera errata; l’array indexname che contiene le ridenominazioni delle righe i cui nomi sono stati estratti in maniera errata; la lista subset contenente il nome/i delle colonne di cui voglio verificare i valori; e  la lista ‘date_toskip’, in cui l’utente inserisce i nomi dei file (senza estensione) che non vuole analizzare.
@@ -46,18 +46,18 @@ Il software LEPDF è composto e da due moduli, organizzati in un unico notebook 
 
 
 
-4.3 Licenza
+### 4.3 Licenza
 Il software è rilasciato con licenza MIT.
 
 
-Utilizzo del software
-5.1 Installazione
+## Utilizzo del software
+### 5.1 Installazione
 E’ necessaria l’installazione di Jupyter-lab: https://jupyter.org 
 E’ possibile scaricare il software da questo link github : https://github.com/MartiSim22/Software-LEPDF
 E’ necessario rinominare i propri file con la nomenclatura seguente per favorire il corretto funzionamento del software: un file riferito al gennaio del 2018 dovrà essere rinominato 2018_1 e così tutti gli altri. Praticamente il nome di ogni file corrisponde alla sua data. 
 Tutti i file dovranno essere inseriti in un'unica cartella chiamata DATI.
 
-5.2 Esecuzione del software
+### 5.2 Esecuzione del software
 E’ importante che prima di utilizzare il software il codice venga personalizzato secondo i propri interessi. Nello specifico:
 
 Personalizzare la lista_anni e la lista_mesi in base al periodo di interesse: 

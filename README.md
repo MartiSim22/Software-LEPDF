@@ -53,7 +53,6 @@ Il software è rilasciato con licenza MIT.
 ## Utilizzo del software
 ### 5.1 Installazione
 E’ necessaria l’installazione di Jupyter-lab: https://jupyter.org 
-E’ possibile scaricare il software da questo link github : https://github.com/MartiSim22/Software-LEPDF
 E’ necessario rinominare i propri file con la nomenclatura seguente per favorire il corretto funzionamento del software: un file riferito al gennaio del 2018 dovrà essere rinominato 2018_1 e così tutti gli altri. Praticamente il nome di ogni file corrisponde alla sua data. 
 Tutti i file dovranno essere inseriti in un'unica cartella chiamata DATI.
 

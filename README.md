@@ -62,6 +62,7 @@ E’ importante che prima di utilizzare il software il codice venga personalizza
 Personalizzare la lista_anni e la lista_mesi in base al periodo di interesse: 
 -	lista_anni = np.arange(2018,2022) - Inserire nella parentesi il periodo di tempo che coprono i file per quanto riguarda l’anno assicurandosi che il secondo numero sia avanti di un anno: in questo caso se i miei file vanno dal 2018 al 2021 inserisco 2018 e 2022.
 -	lista_mesi = np.arange(1,13) - Inserire nella parentesi il periodo di tempo che coprono i file per quanto riguarda il mese assicurandosi che il secondo numero sia avanti di un mese: in questo caso se i miei file vanno da gennaio (1) a dicembre (12)  allora inserisco 1 e 13.
+
 Personalizzare la funzione di configurazione in base agli anni e i mesi dei propri file e scegliere i parametri che si vogliono ricercare. 
 Quelli utilizzati di default nel software sono:
 -	ext , che indica l’estensione del file 

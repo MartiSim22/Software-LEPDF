@@ -24,10 +24,11 @@ Per iniziare
 
 Abstract
 Il software consente di ricevere in input uno o più documenti in formato PDF e ricevere in output un unico documento CSV. Il documento CSV di output è composto da una singola tabella con al suo interno tutti i valori legati ad un argomento scelto presente in tutti i documenti che vengono inseriti in input. Inoltre, l’utente può scegliere quali pagine del documento,quali tabelle , righe o colonne da analizzare, per essere sicuro di ricevere in output solamente i valori di interesse.
- Introduzione
+
+Introduzione
 Il software nasce dall’idea di analizzare i cambiamenti inerenti ad alcuni campi del settore automobilistico durante il periodo della pandemia da COVID-19. Il primo passo è stato quello di ricavare i dati relativi all’immatricolazione di autoveicoli dal sito UNRAE e , dopo aver notato che la maggioranza dei dati forniti dal sito era racchiusa in documenti PDF, è nata l’idea di creare un programma che prenda in input tali file, uno per ogni data : ogni documento contiene delle righe rappresentanti le provincie italiane e delle colonne per diverse marche d’auto. Il risultato è un unico file CSV che mostra l’andamento dell’immatricolazione di autoveicoli per mese nel corso degli anni 2018-2021.
 
- Audience
+Audience
 L’utente dovrà apportare delle modifiche per rendere il programma idoneo ai propri fini, quindi sono opportune delle conoscenze pregresse del linguaggio di programmazione Python. Il software è consigliato a chiunque voglia effettuare un’analisi approfondita di un grande numero di documenti PDF trasformandoli in un unico file CSV. 
 
 

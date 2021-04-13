@@ -89,7 +89,7 @@ Inserire il percorso dei propri file nella riga nel quale viene specificato:  `f
 
 Camelot accetta solamente il “path completo” di un file, ciò viene ricavato nel software utilizzando la libreria Os di Python.
 
-Nella riga `tables = camelot.read_pdf(file,....)` personalizzare i parametri in base a quelli utilizzati nella funzione di configurazione facendo attenzione a lasciare nella parentesi file. Il parametro file viene definito dall’utente con il path completo dei file che vuole analizzare.
+Nella riga `tables = camelot.read_pdf(file,....)` personalizzare i parametri in base a quelli utilizzati nella funzione di configurazione facendo attenzione a lasciare nella parentesi file. Il `parametro file` viene definito dall’utente con il path completo dei file che vuole analizzare.
 
 Nell’ultima riga del software inserire il nome che si desidera per il proprio documento csv.
 

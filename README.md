@@ -8,7 +8,6 @@ Data : 13/04/2021
 
 ### Introduzione
 ### Audience
-### Requisiti di sistema
 ### Descrizione del software:
 - 3.1 Obiettivo
 - 3.2 Componenti

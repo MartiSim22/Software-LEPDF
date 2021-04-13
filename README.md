@@ -73,15 +73,24 @@ pages , che indica quali pagine analizzare del mio file (es. “2” - analizza 
 -	splittext , serve per dividere tutte le stringhe che si trovano in celle diverse; ma che sono state assegnate ad una singola cella durante l’analisi dei dati.
 -	table_areas, da utilizzare nei casi in cui l’area della tabella non è stata trovata correttamente. table_areas consiste in una stringa contenente le coordinate x,y top-left, 	x,y bottom-right della tabella. 
 -	columns, da utilizzare nei casi in cui non tutti i separatori delle colonne della tabella sono state trovate correttamente in maniera automatica. columns consiste in una stringa contenente tutte le coordinate x per ogni separatore di colonna della mia tabella
--	Inserire i nomi dei file - senza estensione - da non analizzare nella lista date_toskip. Questi file da non analizzare potrebbero non esistere (tenendo in considerazione che la funzione prende in input i file anno per anno, per ogni mese, potrebbe capitare che non ho file per alcuni mesi-anni) o semplicemente sono file di cui non sono interessato a ricavare i dati. 
--	Rinominare i nomi delle colonne per ogni tabella nella lista colname, qualora siano stati estratti in maniera incorretta.  La lista colname viene richiamata successivamente dalla funzione df.rename
--	Rinominare i nomi delle righe per ogni tabella nella lista indexname, qualora siano stati estratti in maniera incorretta.  La lista indexname viene richiamata successivamente dalla funzione dftot.rename
--	Inserire nella variabile subset le colonne di cui voglio controllare i valori. La variabile subset viene richiamata nella funzione df.drop_duplicates che elimina le eventuali righe che hanno gli stessi valori per le colonne scelte.
--	Inserire il nome della riga/righe di interesse nella variabile riga 
--	Inserire il nome della colonna/e di interesse nella variabile colonna
--	Inserire il percorso dei propri file nella riga nel quale viene specificato:  file = "/"
+
+Inserire i nomi dei file - senza estensione - da non analizzare nella lista date_toskip. Questi file da non analizzare potrebbero non esistere (tenendo in considerazione che la funzione prende in input i file anno per anno, per ogni mese, potrebbe capitare che non ho file per alcuni mesi-anni) o semplicemente sono file di cui non sono interessato a ricavare i dati. 
+
+Rinominare i nomi delle colonne per ogni tabella nella lista colname, qualora siano stati estratti in maniera incorretta.  La lista colname viene richiamata successivamente dalla funzione df.rename
+
+Rinominare i nomi delle righe per ogni tabella nella lista indexname, qualora siano stati estratti in maniera incorretta.  La lista indexname viene richiamata successivamente dalla funzione dftot.rename
+
+Inserire nella variabile subset le colonne di cui voglio controllare i valori. La variabile subset viene richiamata nella funzione df.drop_duplicates che elimina le eventuali righe che hanno gli stessi valori per le colonne scelte.
+
+Inserire il nome della riga/righe di interesse nella variabile riga 
+
+Inserire il nome della colonna/e di interesse nella variabile colonna
+
+Inserire il percorso dei propri file nella riga nel quale viene specificato:  file = "/"
 Camelot accetta solamente il “path completo” di un file, ciò viene ricavato nel software utilizzando la libreria Os di Python.
--	Nella riga tables = camelot.read_pdf(file,....) personalizzare i parametri in base a quelli utilizzati nella funzione di configurazione facendo attenzione a lasciare nella parentesi file. Il parametro file viene definito dall’utente con il path completo dei file che vuole analizzare.
--	Nell’ultima riga del software inserire il nome che si desidera per il proprio documento csv.
+
+Nella riga tables = camelot.read_pdf(file,....) personalizzare i parametri in base a quelli utilizzati nella funzione di configurazione facendo attenzione a lasciare nella parentesi file. Il parametro file viene definito dall’utente con il path completo dei file che vuole analizzare.
+
+Nell’ultima riga del software inserire il nome che si desidera per il proprio documento csv.
 
 
